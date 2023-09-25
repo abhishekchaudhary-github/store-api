@@ -18,8 +18,8 @@ const schema = new mongoose.Schema({
     name : {
         type : String,
         required : [true,"must not be empty"],
-        maxlength : [10,"must be less than 11 length"]
+        maxlength : [100,"must be less than 11 length"]
     }, rating : Number
 })
 
-module.export = mongoose.model('Store',schema);
+module.exports = mongoose.model('Store',schema);
